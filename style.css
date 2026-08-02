@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+img {
+    width: 200px;
+}
+
+a {
+    display: inline-block;
+    padding: 15px;
+    background: blue;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
