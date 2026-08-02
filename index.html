@@ -1,29 +1,475 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Game</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Game | Official Website</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:white;
+    overflow-x:hidden;
+}
+
+
+/* HERO */
+
+.hero{
+
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    radial-gradient(circle at top,#2563eb,transparent 40%),
+    linear-gradient(#000,#111);
+
+}
+
+
+.hero-content{
+
+    animation:fade 1.5s ease;
+
+}
+
+
+.logo{
+
+    width:180px;
+    height:180px;
+    border-radius:40px;
+
+    object-fit:cover;
+
+    box-shadow:
+    0 0 80px rgba(50,100,255,.8);
+
+}
+
+
+h1{
+
+    font-size:80px;
+    margin-top:30px;
+    letter-spacing:-3px;
+
+}
+
+
+.subtitle{
+
+    font-size:24px;
+    color:#aaa;
+    margin:20px;
+
+}
+
+
+
+.buttons a{
+
+    display:inline-block;
+
+    margin:15px;
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+    color:white;
+
+    background:white;
+    color:black;
+
+    transition:.4s;
+
+}
+
+
+.buttons a:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+/* SECTION */
+
+
+section{
+
+    padding:120px 10%;
+
+}
+
+
+.title{
+
+    font-size:55px;
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+
+/* FEATURES */
+
+
+.cards{
+
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+
+.card{
+
+    width:300px;
+
+    padding:40px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    transition:.5s;
+
+}
+
+
+.card:hover{
+
+    transform:
+    translateY(-15px);
+
+}
+
+
+
+/* SCREENSHOTS */
+
+
+.gallery{
+
+display:flex;
+gap:40px;
+overflow:hidden;
+justify-content:center;
+
+}
+
+
+.gallery img{
+
+width:280px;
+
+border-radius:30px;
+
+transition:.5s;
+
+}
+
+
+.gallery img:hover{
+
+transform:scale(1.08);
+
+}
+
+
+
+/* TRAILER */
+
+.video{
+
+height:500px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:
+linear-gradient(120deg,#111,#222);
+
+border-radius:40px;
+
+font-size:40px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+text-align:center;
+padding:50px;
+color:#777;
+
+}
+
+
+
+
+.fade{
+
+opacity:0;
+transform:translateY(50px);
+
+transition:1s;
+
+}
+
+
+.show{
+
+opacity:1;
+transform:none;
+
+}
+
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+}
+
+}
+
+
+
+</style>
+
 </head>
+
 
 <body>
 
-<h1>My Awesome Game</h1>
 
-<img src="images/logo.png">
+<!-- HERO -->
 
-<p>
-Explore the world of my new mobile game.
+<div class="hero">
+
+
+<div class="hero-content">
+
+
+<img class="logo" src="logo.png">
+
+
+<h1>
+MY GAME
+</h1>
+
+
+<p class="subtitle">
+A new adventure begins.
 </p>
 
-<a href="https://play.google.com">
-Download on Google Play
+
+<div class="buttons">
+
+<a href="#">
+Google Play
 </a>
 
-<br><br>
 
-<a href="https://apps.apple.com">
-Download on App Store
+<a href="#">
+App Store
 </a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<section class="fade">
+
+
+<h2 class="title">
+Experience
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h2>Beautiful World</h2>
+
+<p>
+Explore a stunning world designed with passion.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Unique Gameplay</h2>
+
+<p>
+Simple controls. Endless possibilities.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>Adventure</h2>
+
+<p>
+Your journey starts here.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="fade">
+
+
+<h2 class="title">
+Screenshots
+</h2>
+
+
+<div class="gallery">
+
+<img src="screen1.jpg">
+
+<img src="screen2.jpg">
+
+<img src="screen3.jpg">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="fade">
+
+
+<h2 class="title">
+Trailer
+</h2>
+
+
+<div class="video">
+
+▶ WATCH TRAILER
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+© 2026 My Game Studio
+
+</footer>
+
+
+
+
+
+<script>
+
+
+const items=document.querySelectorAll(".fade");
+
+
+window.addEventListener("scroll",()=>{
+
+
+items.forEach(item=>{
+
+
+let pos=item.getBoundingClientRect().top;
+
+
+if(pos < window.innerHeight-100){
+
+item.classList.add("show");
+
+}
+
+
+});
+
+
+});
+
+
+</script>
+
 
 </body>
+
 </html>
